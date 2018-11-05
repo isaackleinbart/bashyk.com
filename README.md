@@ -1,1 +1,0 @@
-# bashyk.com
