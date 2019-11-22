@@ -1,0 +1,191 @@
+body {
+  overflow: hidden;
+  background-color: #000;
+  font-family: BioRhyme, sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  border-bottom: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+}
+
+.heading {
+  display: inline-block;
+  margin: 0px auto;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  font-size: 4.5vw;
+  line-height: 0.8;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.bg-image {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  bottom: 0px;
+  max-width: auto;
+  -webkit-transform: translate(0px, -50%) scale(1.1);
+  -ms-transform: translate(0px, -50%) scale(1.1);
+  transform: translate(0px, -50%) scale(1.1);
+}
+
+.bg-image-wrapper {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -2;
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+.menu-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.menu-item {
+  margin: 15px 10px;
+  font-size: 2.5vw;
+  line-height: 1;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  text-decoration: underline;
+}
+
+.text-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2;
+  display: none;
+  overflow: auto;
+  width: 60vw;
+  height: 50vh;
+  padding: 50px;
+  background-color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #000;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: inline-block;
+  padding: 10px;
+  color: grey;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+._100vh {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  padding: 40px 40px 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.close-modal {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 13vh;
+  z-index: 1;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .heading {
+    font-size: 7.5vw;
+  }
+  .bg-image {
+    max-width: auto;
+  }
+  .menu-item {
+    font-size: 3.5vw;
+  }
+  .text-wrapper {
+    width: 75vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 8.5vw;
+  }
+  .menu-wrapper {
+    padding-bottom: 50px;
+  }
+  .text-wrapper {
+    width: 100vw;
+    height: 50vh;
+  }
+  ._100vh {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 479px) {
+  .heading {
+    font-size: 10.5vw;
+  }
+  .menu-wrapper {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .menu-item {
+    font-size: 4.5vw;
+  }
+  ._100vh {
+    padding: 20px;
+  }
+}
+
+@font-face {
+  font-family: 'BioRhyme';
+  src: url('../fonts/BioRhyme-Bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
